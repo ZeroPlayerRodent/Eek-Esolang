@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 eval '$m=Hash.new($p=0); $q=Hash.new($d=0); $h=Hash.new($j=0); ($r=0); ($f=0);'+ARGF.read.gsub(/./,
      'E' => '$p+=1;',
-     'e' => '$m[$p]+=1; $m[$p]=19 if $m[$p]>19;', #<- Remember to change this when making new commands
-     'k' => '$p+=1; $m[$p]+=20;',)
+     'e' => '$m[$p]+=1; $m[$p]=20 if $m[$p]>20;', #<- Remember to change this when making new commands
+     'k' => '$p+=1; $m[$p]+=21;',)
 
 $p=0
 while 0==0
@@ -31,5 +31,6 @@ $h[$j]=$q[$d] if $m[$p]==17
 $d+=1 if $m[$p]==18
 $q[$d]=$h[$j] if $m[$p]==18
 $j-=1 if $m[$p]==19
-exit if $m[$p]==20
+$q[$d]-=1 if $m[$p]==20
+exit if $m[$p]==21
 end
