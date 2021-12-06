@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 eval '$m=Hash.new($p=0); $q=Hash.new($d=0); $h=Hash.new($j=0); ($r=0); ($f=0);'+ARGF.read.gsub(/./,
      'N' => '$p+=1;',
-     'o' => '$m[$p]+=1;',)
+     'O' => '$m[$p]+=1;',)
 
 $p=0
 while 0==0
